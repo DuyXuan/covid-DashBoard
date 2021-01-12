@@ -1,0 +1,89 @@
+.statistic {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 260px);
+  grid-auto-flow: row;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.item {
+  height: 70px;
+  border-radius: 5px;
+  padding: 10px 0 0 20px;
+  color: white;
+}
+
+.statistic-confirmed {
+  background: linear-gradient(#683cb7, #732c96);
+}
+.statistic-recovered {
+  background: linear-gradient(#049689, #268543);
+}
+.statistic-deaths {
+  background-color: #ea1e63;
+  background: linear-gradient(#ea1e63, #ed427c);
+}
+.statistic-rate {
+  background-color: #c5175c;
+  background: linear-gradient(#c5175c, #bf227e);
+}
+.statistic .title {
+  font-size: 16px;
+}
+.statistic .data {
+  font-size: 19px;
+  font-weight: 400;
+}
+.statistic-com {
+  width: 100%;
+}
+.regional-select {
+  margin-top: -17px;
+}
+.regional-title .title {
+  margin-left: 5px;
+  font-size: 12px;
+}
+select {
+  border: none !important;
+  border-radius: 0 !important;
+  border-bottom: 2px #a4a8b0 solid !important;
+  max-width: 250px;
+  margin-top: -12px;
+  font-weight: 500;
+  padding-left: 2px !important;
+}
+@media only screen and (max-width: 425px) {
+  .item {
+    margin-top: 30px;
+  }
+  .statistic {
+    display: block;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+
+    width: 100%;
+  }
+  .select-box {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .statistic {
+    text-align: center;
+    grid-template-columns: auto auto;
+  }
+  .regional-title {
+    display: block !important;
+  }
+  .regional-select {
+    margin-top: 0 !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .statistic {
+    grid-template-columns: auto auto auto auto;
+  }
+}
